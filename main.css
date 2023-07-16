@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*{
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;
+}
+
+body{
+    font-family: 'Bruno Ace', cursive;
+    /* font-family: 'Roboto', sans-serif; */
+    line-height: 1.5;
+}
+
+/*font-size*/
+.f-xl{
+    font-size: 128px;
+}
+
+.f-l{
+    font-size: 64px;
+}
+
+.f-m{
+    font-size: 24px;
+}
+
+.f-s{
+    font-size: 16px;
+}
+
+/*space*/
+.container{
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.space{
+    padding: 160px 0;
+}
+
+.adspace{
+    padding: 127px 0;
+}
+
+/*header-item1*/
+.header{
+    background-color: black;
+    color: #fff;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0 20px 0;
+}
+
+.nav li a{
+    text-decoration: none;  
+    color: #fff;
+
+    &:hover{
+    color: #00FFA3;
+    }
+
+}
+
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.mainGuide h1{
+    color: #00FFA3;
+    text-align: right ;
+}
+
+.bottom{
+    display: flex;
+    width: 185px;
+    margin-left: auto;
+    padding: 12px 24px;
+    background-color: #fff;
+    border-radius: 32px;
+}
+
+.bottom a{
+    text-decoration: none;
+    color: #050014;
+
+    &:hover{
+    color: #00FFA3;
+    }
+}
+
+/*introduction-item2*/
+.introduction{
+    background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week2/background-img.png);
+    color: #E3E3E3;
+}
+
+.contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor{
+    width: 565px;
+}
+
+.infor p{
+    margin-top: 33px;
+}
+
+.smallSparkle{
+    display: flex;
+    margin-top: 36px;
+}
+
+.smallSparkle img{
+    margin-right: 16px;
+}
+
+
+/*about me-item3*/
+.card{
+    width: 636px;
+}
+
+.card ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card li{
+    width: 274px;
+    padding: 16px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+    margin:0 24px 24px 0;
+}
+
+.card li a{
+    text-decoration: none;
+    color: #000;
+
+    &:hover{
+        color: #00FFA3;
+    }
+}
+
+.card h3{
+    font-size:  20px;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: space-around;
+}
+
+.infor{
+    width: 526px;
+}
+
+
+/*contact me-item4*/
+.contact{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.contactMe{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #E3E3E3;
+}
+
+
+/*project-item5*/
+.project h2{
+    text-align: right;
+    margin-bottom: 16px;
+}
+
+.side{
+    display: flex;
+}
+
+.article{
+    margin-right: 24px;
+}
+
+.aside{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.guide p{
+    width: 636px;
+    padding-bottom: 76px;
+}             
+
+.bottom2 a{
+    display: flex;
+    padding: 12px 24px;
+    background-color: #000;
+    width: 185px;
+    border-radius: 32px;
+    margin-right: auto;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover{
+        color: #00FFA3;
+    }
+}
+
+/*footer-item6*/
+.footer{
+    background-color: #000;
+}
+
+.footer p{
+    color: #E3E3E3;
+    text-align: center;
+    padding: 40px;
+}
